@@ -7,8 +7,9 @@
 
   <body>
     <a-scene physics="debug: false" background="color: #000000">
-      <a-camera look-controls-enabled="false" wasd-controls-enabled="false" position="0 0 2"></a-camera>
-      <a-entity space-particles material="shader: particles; transparent: true; alphaTest: 0.5;" position="0 0 0"></a-entity>
+      <a-camera look-controls-enabled="false" wasd-controls-enabled="false" position="0 0 0"></a-camera>
+      <a-torus color="#43A367" arc="360" radius="0.3" position="0 0 -0.5" radius-tubular="0.02"></a-torus>
+
       <a-entity id="ball-spawn"></a-entity>
       <!-- FOR THE VIDEO -->
       <!-- <a-plane static-body position="0 0 1" rotation="0 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane> -->

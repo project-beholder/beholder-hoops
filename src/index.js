@@ -14,8 +14,8 @@ window.onload = () => {
   // PETER SHOULD CREATE A COMPONENT THAT APPLIES AN IMPULSE
   document.addEventListener('click', () => {
     const sphere = document.createElement('a-sphere');
-    sphere.setAttribute('position', '0 0 -2');
-    sphere.setAttribute('radius', 0.25);
+    sphere.setAttribute('position', '0 0 -4');
+    sphere.setAttribute('radius', 0.15);
     sphere.setAttribute('dynamic-body', 'shape: sphere;');
     // sphere.setAttribute('shadow', '');
     sphere.setAttribute('color', '#EF2D5E');
@@ -23,7 +23,7 @@ window.onload = () => {
 
 
     requestAnimationFrame(() => {
-      sphere.body.applyImpulse(new CANNON.Vec3(0, 25, 20), new CANNON.Vec3(0, 0, -2));
+      sphere.body.applyImpulse(new CANNON.Vec3(0, 24, 20), new CANNON.Vec3(0, 0, -4));
     });
     
   });
